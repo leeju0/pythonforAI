@@ -1,9 +1,7 @@
 import tensorflow as tf
 
-with tf.compat.v1.Session() as sess:
-  h = tf.constant("Hello")
-  w = tf.constant("World!")
-  hw = h + w
-  ans = sess.run(hw)
-  print(ans)
+# Check for tensorflow GPU acess
+print("TensorFlow has access to the following devices:", tf.config.list_physical_devices())
 
+# See TensorFlow version
+print("TensorFlow version:", tf.__version__)
