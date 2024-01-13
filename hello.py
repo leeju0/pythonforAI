@@ -1,7 +1,7 @@
-import tensorflow as tf
+x = int(input("Enter an integer"))
 
-# Check for tensorflow GPU acess
-print("TensorFlow has access to the following devices:", tf.config.list_physical_devices())
+if x == 1:
+    print("One")
+else:
+    print("Not one")
 
-# See TensorFlow version
-print("TensorFlow version:", tf.__version__)
